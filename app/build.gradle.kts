@@ -36,10 +36,11 @@ android {
 }
 
 dependencies {
-    implementation ("com.squareup.retrofit2:retrofit:2.5.0")
-    implementation("com.squareup.retrofit2:converter-scalars:2.5.0")
-    implementation ("com.google.code.gson:gson:2.8.5")
-    implementation ("com.squareup.retrofit2:converter-gson:2.4.0")
+    implementation(libs.gson)
+    implementation(libs.converter.gson)
+    implementation (libs.retrofit2.retrofit)
+    implementation(libs.retrofit2.converter.scalars)
+    implementation(libs.androidx.recyclerview)
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)
