@@ -4,11 +4,11 @@ plugins {
 }
 
 android {
-    namespace = "com.example.laba_7"
+    namespace = "com.bignerdranch.android.photogallery"
     compileSdk = 34
 
     defaultConfig {
-        applicationId = "com.example.laba_7"
+        applicationId = "com.bignerdranch.android.photogallery"
         minSdk = 21
         targetSdk = 34
         versionCode = 1
@@ -36,7 +36,10 @@ android {
 }
 
 dependencies {
-
+    implementation ("com.squareup.retrofit2:retrofit:2.5.0")
+    implementation("com.squareup.retrofit2:converter-scalars:2.5.0")
+    implementation ("com.google.code.gson:gson:2.8.5")
+    implementation ("com.squareup.retrofit2:converter-gson:2.4.0")
     implementation(libs.androidx.core.ktx)
     implementation(libs.androidx.appcompat)
     implementation(libs.material)

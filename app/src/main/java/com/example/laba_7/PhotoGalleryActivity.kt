@@ -5,7 +5,6 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.example.laba_7.R
 
 class PhotoGalleryActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
