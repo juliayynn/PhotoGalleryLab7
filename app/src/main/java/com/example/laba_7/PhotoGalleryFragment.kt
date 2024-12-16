@@ -22,6 +22,18 @@ class PhotoGalleryFragment : Fragment() {
 
     private lateinit var photoGalleryViewModel : PhotoGalleryViewModel
     private lateinit var photoRecyclerView : RecyclerView
+    private lateinit var thumbnailDownloader : ThumbnailDownloader<PhotoHolder>
+
+    override fun onCreate(savedInstanceState : Bundle?) {
+        super.onCreate(savedInstanceState)
+
+        retainInstance = true
+
+        thumbnailDownloader = ThumbnailDownloader()
+        lifecycle.addObserver(thumbnailDownloader)
+
+        photoGalleryViewModel = ViewModelProviders.of(this).get(PhotoGalleryViewModel::class.java)
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater,
@@ -42,6 +54,12 @@ class PhotoGalleryFragment : Fragment() {
                 photoRecyclerView.adapter = PhotoAdapter(galleryItems)
             })
     }
+
+    override fun onDestroy() {
+        super.onDestroy()
+        lifecycle.removeObserver(thumbnailDownloader)
+    }
+
 
     private class PhotoHolder(private val itemImageView: ImageView):
         RecyclerView.ViewHolder(itemImageView) {
@@ -68,11 +86,11 @@ class PhotoGalleryFragment : Fragment() {
                 R.drawable.bill_up_close
             ) ?: ColorDrawable()
             holder.bindDrawable(placeholder)
+            thumbnailDownloader.queueThumbnail(holder, galleryItem.url)
+
         }
-    }
-    override fun onCreate(savedInstanceState : Bundle?) {
-        super.onCreate(savedInstanceState)
-        photoGalleryViewModel = ViewModelProviders.of(this).get(PhotoGalleryViewModel::class.java)
+
+
     }
     companion object {
         fun newInstance() = PhotoGalleryFragment()
