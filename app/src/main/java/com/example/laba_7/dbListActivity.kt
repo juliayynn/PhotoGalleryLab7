@@ -1,8 +1,10 @@
-package com.bignerdranch.android.laba_7
+package com.example.laba_7
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
+import com.bignerdranch.android.laba_7.dbListFragment
+import com.bignerdranch.android.photogallery.R
 
 class dbListActivity : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {

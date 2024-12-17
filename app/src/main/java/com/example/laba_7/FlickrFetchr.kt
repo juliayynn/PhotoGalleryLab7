@@ -1,4 +1,4 @@
-package com.bignerdranch.android.photogallery
+package com.example.laba_7
 
 import android.graphics.Bitmap
 import android.graphics.BitmapFactory
@@ -10,6 +10,7 @@ import api.FlickrApi
 import api.FlickrResponse
 import api.PhotoInterceptor
 import api.PhotoResponse
+import com.bignerdranch.android.photogallery.GalleryItem
 import okhttp3.OkHttpClient
 import okhttp3.ResponseBody
 import retrofit2.Call
