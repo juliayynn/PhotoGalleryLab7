@@ -1,4 +1,4 @@
-package com.bignerdranch.android.photogallery
+package com.bignerdranch.android.laba_7
 
 import android.os.Bundle
 import androidx.activity.enableEdgeToEdge

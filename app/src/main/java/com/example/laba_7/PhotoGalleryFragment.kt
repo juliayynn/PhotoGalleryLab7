@@ -1,4 +1,4 @@
-package com.bignerdranch.android.photogallery
+package com.bignerdranch.android.laba_7
 
 import android.content.Intent
 import android.graphics.drawable.BitmapDrawable

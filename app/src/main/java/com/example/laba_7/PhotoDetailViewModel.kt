@@ -5,6 +5,7 @@ import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.ViewModel
 import androidx.lifecycle.switchMap
 import com.bignerdranch.android.photogallery.GalleryItem
+import com.bignerdranch.android.photogallery.PhotoRepository
 
 class PhotoDetailViewModel: ViewModel() {
 
