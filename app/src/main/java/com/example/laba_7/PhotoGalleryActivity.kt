@@ -7,7 +7,6 @@ import androidx.activity.enableEdgeToEdge
 import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.ViewCompat
 import androidx.core.view.WindowInsetsCompat
-import com.bignerdranch.android.laba_7.PhotoGalleryFragment
 import com.bignerdranch.android.photogallery.R
 
 class PhotoGalleryActivity : AppCompatActivity() {

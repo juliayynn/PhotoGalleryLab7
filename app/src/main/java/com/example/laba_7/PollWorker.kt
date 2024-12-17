@@ -1,4 +1,4 @@
-package com.bignerdranch.android.photogallery
+package com.example.laba_7
 
 import android.app.PendingIntent
 import android.content.Context
@@ -7,6 +7,7 @@ import androidx.core.app.NotificationCompat
 import androidx.core.app.NotificationManagerCompat
 import androidx.work.Worker
 import androidx.work.WorkerParameters
+import com.bignerdranch.android.photogallery.R
 import com.example.laba_7.NOTIFICATION_CHANNEL_ID
 
 private const val TAG = "PollWorker"

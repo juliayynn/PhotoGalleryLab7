@@ -18,10 +18,7 @@ import androidx.lifecycle.ViewModelProviders
 import androidx.recyclerview.widget.GridLayoutManager
 import androidx.recyclerview.widget.LinearLayoutManager
 import androidx.recyclerview.widget.RecyclerView
-import com.bignerdranch.android.photogallery.GalleryItem
 import com.bignerdranch.android.photogallery.R
-import com.bignerdranch.android.photogallery.ThumbnailDownloader
-import com.bignerdranch.android.photogallery.dbListViewModel
 
 private const val TAG = "dbListFragment"
 class dbListFragment : Fragment() {

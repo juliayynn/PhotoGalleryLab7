@@ -1,4 +1,4 @@
-package com.bignerdranch.android.laba_7
+package com.example.laba_7
 
 import android.content.Intent
 import android.graphics.drawable.BitmapDrawable
@@ -27,13 +27,9 @@ import androidx.work.ExistingPeriodicWorkPolicy
 import androidx.work.NetworkType
 import androidx.work.PeriodicWorkRequest
 import androidx.work.WorkManager
-import com.bignerdranch.android.photogallery.GalleryItem
-import com.bignerdranch.android.photogallery.PhotoGalleryViewModel
-import com.bignerdranch.android.photogallery.PhotoRepository
-import com.bignerdranch.android.photogallery.PollWorker
-import com.bignerdranch.android.photogallery.QueryPreferences
+
 import com.bignerdranch.android.photogallery.R
-import com.bignerdranch.android.photogallery.ThumbnailDownloader
+
 import com.example.laba_7.PhotoGalleryApplication
 import java.util.concurrent.TimeUnit
 

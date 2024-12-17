@@ -1,4 +1,4 @@
-package com.bignerdranch.android.photogallery
+package com.example.laba_7
 
 import android.content.Context
 import android.preference.PreferenceManager

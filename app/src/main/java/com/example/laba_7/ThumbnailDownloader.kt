@@ -1,4 +1,4 @@
-package com.bignerdranch.android.photogallery
+package com.example.laba_7
 
 import android.annotation.SuppressLint
 import android.graphics.Bitmap

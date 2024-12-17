@@ -1,4 +1,4 @@
-package com.bignerdranch.android.photogallery
+package com.example.laba_7
 
 import android.app.Application
 import androidx.lifecycle.AndroidViewModel
@@ -6,6 +6,8 @@ import androidx.lifecycle.LiveData
 import androidx.lifecycle.MutableLiveData
 import androidx.lifecycle.switchMap
 import androidx.lifecycle.viewModelScope
+import com.bignerdranch.android.photogallery.PhotoRepository
+import com.bignerdranch.android.photogallery.QueryPreferences
 import kotlinx.coroutines.launch
 
 class PhotoGalleryViewModel(private val app: Application) : AndroidViewModel(app) {
